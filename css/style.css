@@ -1,0 +1,419 @@
+/* --- Основа для всех страниц --- */
+
+:root {
+  --text-blue: #2196f3;
+  --text-hero-white: #ffffff;
+  --text-white-footer: rgba(255, 255, 255, 0.6);
+  --text-black: #212121;
+  --text-grey: #757575;
+  --background-hero: #2f303a;
+  --background-btn: #f5f4fa;
+  --border-proekts: #eeeeee;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-black);
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid tomato; */
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ СТРАНИЦ ХЕДЕРА И ФУТЕРА */
+
+/* --- Шапка--- */
+
+.page-header {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.logo {
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-link {
+  color: var(--text-blue);
+}
+
+.list-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 92px;
+}
+
+.item-nav:not(:last-child),
+.header-contacts:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--text-blue);
+}
+
+.list-nav .link.current {
+  color: var(--text-blue);
+}
+
+.contacts {
+  color: var(--text-grey);
+}
+
+/* --- Футер --- */
+
+/* --- Адресс --- */
+
+.footer {
+  background-color: var(--background-hero);
+  padding: 60px 0;
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--text-hero-white);
+}
+
+.footer-items:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-link {
+  display: inline-block;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-hero-white);
+}
+
+.post {
+  color: var(--text-white-footer);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--text-blue);
+}
+
+/* --- ГЛАВНАЯ СТРАНИЦА --- */
+
+/* --- Баннер --- */
+
+.hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--background-hero);
+  text-align: center;
+}
+
+.hero-text {
+  margin-bottom: 30px;
+
+  color: var(--text-hero-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  color: var(--text-hero-white);
+  background-color: var(--text-blue);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.hero-container {
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- Особенности --- */
+
+.features {
+  display: flex;
+  padding-top: 89px;
+  padding-bottom: 91px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-items {
+  flex-basis: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.features-items:last-child {
+  margin-right: 0px;
+}
+
+.features-heading {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--text-grey);
+}
+
+/* --- Чем мы занимаемся --- */
+
+.work {
+  padding-bottom: 94px;
+}
+
+.heading-main {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-black);
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-item {
+  flex-basis: calc((100% - 60px) / 3);
+  padding-right: 30px;
+}
+
+.work-item:last-child {
+  padding-right: 0;
+}
+
+.work-item img {
+  display: block;
+}
+
+/* --- Наша команда --- */
+
+.family {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.family-list {
+  display: flex;
+}
+
+.family-item img {
+  display: block;
+  max-width: 100%;
+  padding-bottom: 30px;
+}
+
+.family-item {
+  flex-basis: calc((100% - 30px) / 4);
+  margin-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.family-item:last-child {
+  padding-right: 0;
+}
+
+.family-name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-black);
+}
+
+.family-proffesion {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-grey);
+}
+
+/* СТРАННИЦА ПОРТФОЛИО */
+
+/* --- НАШИ ПРОЕКТЫ */
+
+/* КНОПКИ */
+
+.proekts {
+  padding: 94px 0;
+}
+
+.list-btn {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.item-btn:not(:last-child) {
+  margin-right: 6px;
+}
+
+.proekts-btn {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-black);
+  background: var(--background-btn);
+}
+
+.proekts-btn:hover,
+.proekts-btn:focus {
+  color: var(--text-hero-white);
+  background: var(--text-blue);
+}
+
+/* СПИСОК ПРОЕКТОВ */ 
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
+}
+
+.card-set .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  border-radius: 4px;
+}
+
+.card-content {
+  padding: 20px 24px;
+}
+
+.card-heading {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.card-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--text-grey);
+}
+
