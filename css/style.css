@@ -65,6 +65,10 @@ p {
 .page-header {
   display: flex;
   align-items: center;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header-nav {
@@ -74,8 +78,11 @@ p {
 
 .header-list {
   display: flex;
-  align-items: center;
   margin-left: auto;
+}
+
+.header-contacts {
+  display: flex;
 }
 
 .logo {
@@ -102,13 +109,9 @@ p {
 }
 
 .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .link:hover,
@@ -121,7 +124,31 @@ p {
 }
 
 .contacts {
+  display: inline-flex;
   color: var(--text-grey);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--text-blue);
+}
+
+.link-post::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../images/svg/envelope.svg);}
+
+.link-tel::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/svg/smartphone.svg);
 }
 
 /* --- Футер --- */
