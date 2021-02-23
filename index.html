@@ -18,28 +18,38 @@
   <body>
     <!--Шапка-->
     <header class="page-header container">
-        <nav class="header-nav">
-          <a class="logo" href=""><span class="logo-link">Web</span>Studio</a>
-          <ul class="list-nav">
-            <li class="item-nav">
-              <a class="link current" href="">Студия</a>
-            </li>
-            <li class="item-nav">
-              <a class="link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="item-nav">
-              <a class="link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="header-list">
-          <li class="header-contacts">
-            <a class="contacts link-post" href="">info@devstudio.com</a>
+      <nav class="header-nav">
+        <a class="logo" href=""><span class="logo-link">Web</span>Studio</a>
+        <ul class="list-nav">
+          <li class="item-nav">
+            <a class="link current" href="">Студия</a>
           </li>
-          <li class="header-contacts">
-            <a class="contacts link-tel" href="">+38 096 111 11 11</a>
+          <li class="item-nav">
+            <a class="link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="item-nav">
+            <a class="link" href="">Контакты</a>
           </li>
         </ul>
+      </nav>
+      <ul class="header-list">
+        <li class="header-contacts">
+          <a class="contacts link-post" href="">
+            <svg class="link-email">
+              <use href="../images/sprite.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="header-contacts">
+          <a class="contacts" href="">
+            <svg class="link-tel">
+              <use href="../images/sprite.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
     </header>
 
     <main>
@@ -57,6 +67,11 @@
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="features-list">
             <li class="features-items">
+              <div class="block">
+                <svg class="link-block">
+                  <use href="../images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="features-heading">Внимание к деталям</h3>
               <p class="features-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -64,6 +79,11 @@
               </p>
             </li>
             <li class="features-items">
+              <div class="block">
+                <svg class="link-block">
+                  <use href="../images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="features-heading">Пунктуальность</h3>
               <p class="features-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -71,6 +91,11 @@
               </p>
             </li>
             <li class="features-items">
+              <div class="block">
+                <svg class="link-block">
+                  <use href="../images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="features-heading">Планирование</h3>
               <p class="features-text">
                 Равным образом консультация с широким активом в значительной
@@ -78,6 +103,11 @@
               </p>
             </li>
             <li class="features-items">
+              <div class="block">
+                <svg class="link-block">
+                  <use href="../images/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="features-heading">Современные технологии</h3>
               <p class="features-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -94,19 +124,13 @@
           <h2 class="heading-main">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-item">
-              <a class="work-text" href="">
-                <img src="./images/box1.jpg" alt="Программирование" />
-              </a>
+              <img src="./images/box1.jpg" alt="Программирование" />
             </li>
             <li class="work-item">
-              <a href="">
-                <img src="./images/box2.jpg" alt="Приложения" />
-              </a>
+              <img src="./images/box2.jpg" alt="Приложения" />
             </li>
             <li class="work-item">
-              <a href="">
-                <img src="./images/box3.jpg" alt="Дизайн" />
-              </a>
+              <img src="./images/box3.jpg" alt="Дизайн" />
             </li>
           </ul>
         </div>
@@ -118,11 +142,39 @@
           <h2 class="heading-main">Наша команда</h2>
           <ul class="family-list">
             <li class="family-item">
-              <a href="">
-                <img src="./images/team/team1.jpg" alt="Игорь Демьяненко" />
-              </a>
+              <img src="./images/team/team1.jpg" alt="Игорь Демьяненко" />
               <h3 class="family-name">Игорь Демьяненко</h3>
               <p class="family-proffesion" lang="en">Product Designer</p>
+              <ul class="social-card">
+                <li class="social-tumb">
+                  <a class="social-link" href="">
+                    <svg class="social-svg">
+                      <use href="../images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-tumb">
+                  <a class="social-link" href="">
+                    <svg class="social-svg">
+                      <use href="../images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-tumb">
+                  <a class="social-link" href="">
+                    <svg class="social-svg">
+                      <use href="../images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-tumb">
+                  <a class="social-link" href="">
+                    <svg class="social-svg">
+                      <use href="../images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="family-item">
               <a href="">
@@ -153,7 +205,6 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-
         <!--Адресс-->
         <address class="address">
           <a class="logo logo-footer" href=""
