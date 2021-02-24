@@ -11,7 +11,7 @@
   --border-proekts: #eeeeee;
   --background-footer: #2f303a;
   --background-family: #f5f4fa;
-  --border-clients: #AFB1B8;
+  --border-clients: #afb1b8;
   --social-footer: rgba(255, 255, 255, 0.1);
 }
 
@@ -306,7 +306,6 @@ p {
 
 .family-list {
   display: flex;
-
 }
 
 .family-item img {
@@ -321,7 +320,8 @@ p {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--text-hero-white);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .family-item:last-child {
@@ -368,7 +368,6 @@ p {
   color: var(--text-grey);
   background-color: var(--text-hero-white);
   border-radius: 50%;
-  
 }
 
 .social-link:hover,
@@ -396,11 +395,9 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .clients-item {
-  
 }
 
 .clients-link {
@@ -434,13 +431,13 @@ p {
   fill: currentColor;
 }
 
-.company{
+.company {
   width: 42px;
   height: 42px;
   fill: currentColor;
 }
 
-.foster{
+.foster {
   width: 80px;
   height: 42px;
   fill: currentColor;
@@ -497,6 +494,8 @@ p {
 .proekts-btn:focus {
   color: var(--text-hero-white);
   background: var(--text-blue);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* СПИСОК ПРОЕКТОВ */
@@ -521,7 +520,21 @@ img {
 
 .card {
   border-radius: 4px;
+  border: 1px solid var(--border-proekts);
 }
+
+.card:hover,
+.card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* .card-link:hover,
+.card-link:focus {
+  background-color: var(--text-hero-white);
+  border: 1px solid var(--border-proekts);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
 
 .card-content {
   padding: 20px 24px;
@@ -594,7 +607,6 @@ img {
 .join {
   min-width: 206px;
   margin-top: 15px;
-
 }
 
 .join-heading {
@@ -608,7 +620,7 @@ img {
 
 .join .social-link {
   background-color: var(--social-footer);
-  color: var(--text-hero-white)
+  color: var(--text-hero-white);
 }
 
 .join .social-link:hover,
