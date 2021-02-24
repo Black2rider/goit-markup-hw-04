@@ -315,8 +315,10 @@ p {
 .family-item {
   flex-basis: calc((100% - 30px) / 4);
   margin-right: 30px;
-  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--text-hero-white);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .family-item:last-child {
@@ -335,6 +337,8 @@ p {
 }
 
 .family-proffesion {
+  margin-bottom: 16px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -343,15 +347,42 @@ p {
   color: var(--text-grey);
 }
 
-.social-svg {
+.social-card {
   display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.social-tumb {
+  margin-bottom: 30px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  color: var(--text-grey);
+  background-color: var(--text-hero-white);
+  border-radius: 50%;
+  
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--text-blue);
+  color: var(--text-hero-white);
 }
 
 .social-svg {
+  display: inline-block;
   width: 20px;
   height: 20px;
-
+  margin: 12px;
+  fill: currentColor;
 }
+
+
 
 /* СТРАННИЦА ПОРТФОЛИО */
 
