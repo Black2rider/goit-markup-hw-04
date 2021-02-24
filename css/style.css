@@ -141,16 +141,7 @@ p {
   color: var(--text-blue);
 }
 
-.link-email {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.link-tel {
-  width: 10px;
-  height: 16px;
+.contacts-link {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -227,11 +218,10 @@ p {
 .block {
   background-color: var(--background-family);
   margin-bottom: 30px;
+  
 }
 
 .link-block {
-  width: 70px;
-  height: 70px;
   margin: 25px 100px;
 }
 
@@ -378,8 +368,6 @@ p {
 
 .social-svg {
   display: inline-block;
-  width: 20px;
-  height: 20px;
   margin: 12px;
   fill: currentColor;
 }
@@ -397,9 +385,6 @@ p {
   align-items: center;
 }
 
-.clients-item {
-}
-
 .clients-link {
   display: inline-flex;
   justify-content: center;
@@ -409,6 +394,7 @@ p {
   border: 1px solid var(--border-clients);
   border-radius: 4px;
   color: var(--border-clients);
+  fill: currentColor;
 }
 
 .clients-link:hover,
@@ -417,42 +403,6 @@ p {
   color: var(--text-blue);
   border: 1px solid var(--text-blue);
   border-radius: 4px;
-}
-
-.yaco {
-  width: 45px;
-  height: 50px;
-  fill: currentColor;
-}
-
-.company-tagline {
-  width: 40px;
-  height: 52px;
-  fill: currentColor;
-}
-
-.company {
-  width: 42px;
-  height: 42px;
-  fill: currentColor;
-}
-
-.foster {
-  width: 80px;
-  height: 42px;
-  fill: currentColor;
-}
-
-.brand {
-  width: 60px;
-  height: 47px;
-  fill: currentColor;
-}
-
-.company-line {
-  width: 88px;
-  height: 45px;
-  fill: currentColor;
 }
 
 /* СТРАННИЦА ПОРТФОЛИО */
