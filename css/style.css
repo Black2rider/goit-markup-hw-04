@@ -11,6 +11,8 @@
   --border-proekts: #eeeeee;
   --background-footer: #2f303a;
   --background-family: #f5f4fa;
+  --border-clients: #AFB1B8;
+  --social-footer: rgba(255, 255, 255, 0.1);
 }
 
 .visually-hidden {
@@ -304,6 +306,7 @@ p {
 
 .family-list {
   display: flex;
+
 }
 
 .family-item img {
@@ -322,7 +325,7 @@ p {
 }
 
 .family-item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .family-name {
@@ -382,7 +385,78 @@ p {
   fill: currentColor;
 }
 
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
 
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.clients-item {
+  
+}
+
+.clients-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--border-clients);
+  border-radius: 4px;
+  color: var(--border-clients);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  background-color: var(--text-hero-white);
+  color: var(--text-blue);
+  border: 1px solid var(--text-blue);
+  border-radius: 4px;
+}
+
+.yaco {
+  width: 45px;
+  height: 50px;
+  fill: currentColor;
+}
+
+.company-tagline {
+  width: 40px;
+  height: 52px;
+  fill: currentColor;
+}
+
+.company{
+  width: 42px;
+  height: 42px;
+  fill: currentColor;
+}
+
+.foster{
+  width: 80px;
+  height: 42px;
+  fill: currentColor;
+}
+
+.brand {
+  width: 60px;
+  height: 47px;
+  fill: currentColor;
+}
+
+.company-line {
+  width: 88px;
+  height: 45px;
+  fill: currentColor;
+}
 
 /* СТРАННИЦА ПОРТФОЛИО */
 
@@ -470,13 +544,17 @@ img {
   color: var(--text-grey);
 }
 
-/* --- Футер --- */
+/* --- ФУТЕР --- */
 
-/* --- Адресс --- */
+/* --- АДРЕСС --- */
 
 .footer {
   background-color: var(--background-footer);
   padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
 }
 
 .logo-footer {
@@ -492,6 +570,7 @@ img {
 
 .address-link {
   display: inline-block;
+  margin-right: 70px;
 
   font-style: normal;
   font-weight: normal;
@@ -508,4 +587,31 @@ img {
 .address-link:hover,
 .address-link:focus {
   color: var(--text-blue);
+}
+
+/* --- ПРИСОЕДИНЯЙТЕСЬ --- */
+
+.join {
+  min-width: 206px;
+  margin-top: 15px;
+
+}
+
+.join-heading {
+  margin-bottom: 15px;
+  color: var(--text-hero-white);
+}
+
+.join .social-card {
+  margin: 0;
+}
+
+.join .social-link {
+  background-color: var(--social-footer);
+  color: var(--text-hero-white)
+}
+
+.join .social-link:hover,
+.join .social-link:focus {
+  background-color: var(--text-blue);
 }
